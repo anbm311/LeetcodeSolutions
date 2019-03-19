@@ -10,7 +10,7 @@ def validAnagram(strA, strB):
     return "".join(sorted(strA)) == "".join(sorted(strB))
 
 
-# Time complexity - O(n), Space Complexity - O(1)
+# Time complexity - O(n), Space Complexity - O(n)
 
 def ValidAnagramSolution(strA, strB):
     if len(strA) != len(strB):
@@ -27,6 +27,8 @@ def ValidAnagramSolution(strA, strB):
             return False
 
     return True
+
+# Time complexity - O(n), Space Complexity - O(n)
 
 def ValidAnagram_3(strA, strB):
 
@@ -48,6 +50,7 @@ def ValidAnagram_3(strA, strB):
 
     return True
 
+# Time complexity - O(n), Space Complexity - O(n)
 
 def ValidAnagram_4(strA, strB):
     if len(strA) != len(strB):
@@ -63,6 +66,8 @@ def ValidAnagram_4(strA, strB):
         HashMap2[char] = HashMap2.get(char, 0) + 1
 
     return HashMap1 == HashMap2
+
+# Time complexity - O(n), Space Complexity - O(n)
 
 def ValidAnagram_5(strA, strB):
     if len(strA) != len(strB):
